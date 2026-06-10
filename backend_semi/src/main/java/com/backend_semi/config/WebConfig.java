@@ -1,4 +1,5 @@
 package com.backend_semi.config;
+// 테스트
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Configuration;
