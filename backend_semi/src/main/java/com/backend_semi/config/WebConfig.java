@@ -11,7 +11,6 @@ public class WebConfig implements WebMvcConfigurer {
 
     // 임시 방편으로 만들어 놓은 설정
     // CorsConfig.java에 다시 설정해놓음
-    // 확인필수
     /*@Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")

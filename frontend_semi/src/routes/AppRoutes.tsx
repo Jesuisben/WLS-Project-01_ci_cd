@@ -1,5 +1,4 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-// 경로에 대소문자 확인 필수
 
 import Home from "../pages/Home";
 import LoginPage from "../pages/LoginPage";
