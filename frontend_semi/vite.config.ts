@@ -23,6 +23,11 @@ export default defineConfig({
         target: 'http://localhost:9000',
         changeOrigin: true,
       },
+      // 업로드 파일도 백엔드로 넘김 (로컬 개발용)
+      '/files': {
+        target: 'http://localhost:9000',
+        changeOrigin: true,
+      },
     },
   },
 })

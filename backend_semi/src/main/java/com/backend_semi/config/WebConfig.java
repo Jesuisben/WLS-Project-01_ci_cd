@@ -23,11 +23,20 @@ public class WebConfig implements WebMvcConfigurer {
     @Value("${uploadPath}")
     private String uploadPath ;
 
+    @Value("${file.upload-dir}")
+    private String fileUploadDir;
+
     @Override
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
         registry
                 .addResourceHandler("/images/**")
                 .addResourceLocations(uploadPath);
+
+        // 업로드 파일 서빙 (로컬 모드용)
+        // 윈도우: C:/upload/files → file:///C:/upload/files/
+        registry
+                .addResourceHandler("/files/**")
+                .addResourceLocations("file:///" + fileUploadDir + "/");
 
     }
 }
