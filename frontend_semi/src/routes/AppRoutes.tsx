@@ -1,5 +1,4 @@
 import { Navigate, Route, Routes } from "react-router-dom";
-// 테스트
 
 import Home from "../pages/Home";
 import LoginPage from "../pages/LoginPage";
